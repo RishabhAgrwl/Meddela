@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".Notices">
+
+
+    <TextView
+        android:id="@+id/notTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="SEND NOTICE"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="SEND NOTICE" />
+
+    <TextView
+        android:id="@+id/nottvsendto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Select recipients' details"
+        android:textColor="@color/lighgrey"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notTitle" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:columnCount="8"
+        android:rowCount="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nottvsendto">
+
+        <TextView
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="Branch"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/notTvYear"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="SELECT YEAR"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="Section"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/notBtnBranchIT"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_column="0"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_row="1"
+            android:background="@drawable/btn_bg_white"
+            android:text="IT"
+            android:textColor="@color/btn_text_white" />
+
+        <Button
+            android:id="@+id/notBtnBranchEC"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_column="0"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_row="2"
+            android:background="@drawable/btn_bg_white"
+            android:text="EC"
+            android:textColor="@color/btn_text_white" />
+
+        <Button
+            android:id="@+id/notBtnBranchCS"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_column="0"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_row="3"
+            android:background="@drawable/btn_bg_white"
+            android:text="CS"
+            android:textColor="@color/btn_text_white" />
+
+        <Button
+            android:id="@+id/notBtnBranchME"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_column="0"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_row="4"
+            android:background="@drawable/btn_bg_white"
+            android:text="ME"
+            android:textColor="@color/btn_text_white" />
+
+        <Button
+            android:id="@+id/notBtnBranchBT"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_column="0"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_row="5"
+            android:background="@drawable/btn_bg_white"
+            android:text="BT"
+            android:textColor="@color/btn_text_white" />
+
+        <Button
+            android:id="@+id/notBtnBranchCE"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_column="0"
+            android:layout_marginEnd="16dp"
+            android:layout_row="6"
+            android:background="@drawable/btn_bg_white"
+            android:text="CE"
+            android:textColor="@color/btn_text_white" />
+
+
+        <CheckBox
+            android:id="@+id/notCb1IT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:buttonTint="@android:color/white"
+            android:text="1"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb1EC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:buttonTint="@android:color/white"
+            android:text="1"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb1CS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:buttonTint="@android:color/white"
+            android:text="1"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb1ME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:buttonTint="@android:color/white"
+            android:text="1"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb1BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:buttonTint="@android:color/white"
+            android:text="1"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb1CE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="6"
+            android:buttonTint="@android:color/white"
+            android:text="1"
+            android:textColor="@android:color/white" />
+
+
+        <CheckBox
+            android:id="@+id/notCb2IT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:buttonTint="@android:color/white"
+            android:text="2"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb2EC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:buttonTint="@android:color/white"
+            android:text="2"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb2CS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:buttonTint="@android:color/white"
+            android:text="2"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb2ME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:buttonTint="@android:color/white"
+            android:text="2"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb2BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="5"
+            android:buttonTint="@android:color/white"
+            android:text="2"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb2CE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="6"
+            android:buttonTint="@android:color/white"
+            android:text="2"
+            android:textColor="@android:color/white" />
+
+
+        <CheckBox
+            android:id="@+id/notCb3IT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:buttonTint="@android:color/white"
+            android:text="3"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb3EC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:buttonTint="@android:color/white"
+            android:text="3"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb3CS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:buttonTint="@android:color/white"
+            android:text="3"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb3ME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="4"
+            android:buttonTint="@android:color/white"
+            android:text="3"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb3BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="5"
+            android:buttonTint="@android:color/white"
+            android:text="3"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb3CE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="6"
+            android:buttonTint="@android:color/white"
+            android:text="3"
+            android:textColor="@android:color/white" />
+
+
+        <CheckBox
+            android:id="@+id/notCb4IT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="1"
+            android:buttonTint="@android:color/white"
+            android:text="4"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb4EC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="2"
+            android:buttonTint="@android:color/white"
+            android:text="4"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb4CS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="3"
+            android:buttonTint="@android:color/white"
+            android:text="4"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb4ME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="4"
+            android:buttonTint="@android:color/white"
+            android:text="4"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb4BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="5"
+            android:buttonTint="@android:color/white"
+            android:text="4"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/notCb4CE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_row="6"
+            android:buttonTint="@android:color/white"
+            android:text="4"
+            android:textColor="@android:color/white" />
+
+
+        <CheckBox
+            android:id="@+id/notCbAIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_row="1"
+            android:text="A"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbAEC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_row="2"
+            android:text="A"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbACS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_row="3"
+            android:text="A"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_row="4"
+            android:text="A"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbABT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_row="5"
+            android:text="A"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbACE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_row="6"
+            android:text="A"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbBIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="1"
+            android:text="B"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbBEC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="2"
+            android:text="B"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbBCS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="3"
+            android:text="B"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbBME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="4"
+            android:text="B"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbBBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="5"
+            android:text="B"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbBCE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="6"
+            android:text="B"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbCIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="7"
+            android:layout_row="1"
+            android:text="C"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbCEC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="7"
+            android:layout_row="2"
+            android:text="C"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbCCS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="7"
+            android:layout_row="3"
+            android:text="C"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbCME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="7"
+            android:layout_row="4"
+            android:text="C"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbCBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="7"
+            android:layout_row="5"
+            android:text="C"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notCbCCE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="7"
+            android:layout_row="6"
+            android:text="C"
+            android:visibility="gone" />
+
+
+    </GridLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textColorHint="@color/lighgrey">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/notEtHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Notice Heading"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:theme="@style/TextLabel"
+                    tools:text="What is Lorem Ipsum?" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/lighgrey">
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/notEtDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+
+                    android:theme="@style/TextLabel"
+                    tools:text="Lorem Ipsum is simply dummy text... " />
+
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/notSendButton"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_bg_white"
+        android:text="Send"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

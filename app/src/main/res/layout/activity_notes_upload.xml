@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+
+    tools:context=".NotesUpload">
+
+    <TextView
+        android:id="@+id/ntsUpldHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="UPLOAD NOTES"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/ntsSelectClassLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ntsUpldHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/ntsSpinnerBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+        <Spinner
+            android:id="@+id/ntsSpinnerYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ntsCbSecA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="@android:color/white"
+                android:text="A"
+                android:textColor="@android:color/white" />
+
+            <CheckBox
+                android:id="@+id/ntsCbSecB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="@android:color/white"
+                android:text="B"
+                android:textColor="@android:color/white" />
+
+            <CheckBox
+                android:id="@+id/ntsCbSecC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="@android:color/white"
+                android:text="C"
+                android:textColor="@android:color/white" />
+
+            <CheckBox
+                android:id="@+id/ntsCbSecD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white"
+                android:text="D"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ntsUpldSelectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ntsSelectClassLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg_selectfilewhite"
+        android:text="Select Files to Upload"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/ntsUpldingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/layour_bg_white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ntsUpldTextStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your File is Uploading"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ntsUpldFileNmLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="filename.type"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/ntsUpldProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/progress_bar_custom"
+            android:progressDrawable="@drawable/progress_bar_custom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:id="@+id/ntsUpldSizeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                tools:text="400mb" />
+
+            <TextView
+                android:id="@+id/ntsUpldProgressLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="16sp"
+                tools:text="40%" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ntsUpldPauseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg_pauseuploadorange"
+            android:fontFamily="@font/nunito"
+            android:text="Pause Upload"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/ntsUpldCancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg_canceluploadorange"
+            android:fontFamily="@font/nunito"
+            android:text="Cancel Upload"
+            android:textAllCaps="false"
+            android:textColor="@color/orange" />
+    </LinearLayout>
+
+</RelativeLayout>

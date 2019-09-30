@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rishabh.meddela.UnderConstruction"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coders_at_work"
+        android:scaleType="centerInside"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/colorAndroidGreen"
+        android:tintMode="src_in"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAndroidGreenDark"
+        android:text="Under Construction"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignTop="@id/wavingdroid"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/wavingdroid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/waving_android_guy_2"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>

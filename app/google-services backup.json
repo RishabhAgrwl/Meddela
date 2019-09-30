@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "932913141654",
+    "firebase_url": "https://meddela-dd862.firebaseio.com",
+    "project_id": "meddela-dd862",
+    "storage_bucket": "meddela-dd862.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932913141654:android:c0c060a6b6fd9686",
+        "android_client_info": {
+          "package_name": "com.example.rishabh.meddela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932913141654-45rnod0gm2jq3tuo4tjmdccga5or1s77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rishabh.meddela",
+            "certificate_hash": "ab432101a151818b2583e024e4bbd713609be2e3"
+          }
+        },
+        {
+          "client_id": "932913141654-kbrhjo11ii72gk174gjj8aqnls8rjg41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGt2LYCh1QV21YTTd2KFJPKraCw_73-gA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932913141654-kbrhjo11ii72gk174gjj8aqnls8rjg41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

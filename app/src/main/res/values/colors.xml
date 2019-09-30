@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--BLUE-->
+    <color name="colorPrimaryLight">#6ec6ff</color>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#0069c0</color>
+    <color name="colorPrimaryDarker">#0D47A1</color>
+
+    <color name="transparentfill">#000069c0</color>
+
+    <!--GREEN-->
+    <!--<color name="colorPrimary">#009688</color>-->
+    <!--<color name="colorPrimaryLight">#52c7b8</color>-->
+    <!--<color name="colorPrimaryDark">#00675b</color>-->
+
+    <color name="colorAccent">#ffa726</color>
+    <color name="colorAccentLight">#ffd95b</color>
+    <color name="colorAccentDark">#c77800</color>
+
+    <color name="orange">#DD2C00</color>
+
+    <color name="greytext">#767676</color>
+
+
+    <color name="lighgrey">#BDBDBD</color>
+    <color name="lesslightgrey">#9E9E9E</color>
+
+
+    <color name="textgraydark">#353535</color>
+
+    <color name="colorDarkGrayBackground">#212121</color>
+    <color name="colorAndroidGreen">#78c257
+    </color>
+    <color name="colorAndroidGreenDark">#619528</color>
+
+</resources>

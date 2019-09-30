@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/nav_group_main"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Account"></item>
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/ic_time_table_black_24dp"
+            android:title="Time Table"></item>
+     <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_notes_black_24dp"
+            android:title="Notes"></item>
+
+    </group>
+
+    <group
+        android:id="@+id/nav_group_admin"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notes_upload"
+            android:icon="@drawable/ic_file_upload_black_24dp"
+            android:title="Upload Notes"></item>
+        <item
+            android:id="@+id/nav_notices"
+            android:icon="@drawable/ic_notices_black_24dp"
+            android:title="Send Notices"></item>
+        <item
+            android:id="@+id/nav_addtimetable"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="Add Time Table"></item>
+
+    </group>
+</menu>

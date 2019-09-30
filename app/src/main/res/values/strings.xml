@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Meddela</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_test_navigation">TestNavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="action_logout">Logout</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_time_table">TimeTable</string>
+
+
+    <string name="day_1_long">Monday</string>
+    <string name="day_2_long">Tuesday</string>
+    <string name="day_3_long">Wednesday</string>
+    <string name="day_4_long">Thursday</string>
+    <string name="day_5_long">Friday</string>
+
+
+    <string name="day_1">Mon</string>
+    <string name="day_2">Tues</string>
+    <string name="day_3">Wed</string>
+    <string name="day_4">Thurs</string>
+    <string name="day_5">Fri</string>
+
+    <string-array name="SubjectNames">
+        <item>English</item>
+        <item>Network</item>
+        <item>Design</item>
+        <item>Digital</item>
+    </string-array>
+
+    <string-array name="LectureNumber">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+
+    </string-array>
+
+    <string-array name="DayName">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <string-array name="Day">
+        <item>Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <string-array name="Branch">
+        <item>Branch</item>
+        <item>EC</item>
+        <item>IT</item>
+        <item>CS</item>
+        <item>ME</item>
+        <item>BT</item>
+    </string-array>
+
+    <string-array name="Section">
+        <item>Section</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string-array name="Year">
+        <item>Year</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="account_branch_sec">%1$s - %2$s</string>
+    <string name="account_year_styear">%1$sst Year</string>
+    <string name="account_year_ndyear">%1$snd Year</string>
+    <string name="account_year_rdyear">%1$srd Year</string>
+    <string name="account_year_thyear">%1$sth Year</string>
+
+    <string name="addtt_user_selected_class">%1$s - %2$s | %3$sth Year</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="main_tt_change_date">Time Table was changed on %1$s - %2$s, %3$s. Please check the updated schedule.</string>
+    <string name="main_next_lecture_student">Next lecture is of %1$s by %2$s from %3$s:00</string>
+
+    <string name="main_next_lecture_teacher_st">Next lecture is of %1$s in class %2$s - %3$s, %4$sst Year from %5$s:00</string>
+    <string name="main_next_lecture_teacher_nd">Next lecture is of %1$s in class %2$s - %3$s, %4$snd Year from %5$s:00</string>
+    <string name="main_next_lecture_teacher_rd">Next lecture is of %1$s in class %2$s - %3$s, %4$srd Year from %5$s:00</string>
+    <string name="main_next_lecture_teacher_th">Next lecture is of %1$s in class %2$s - %3$s, %4$sth Year from %5$s:00</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+</resources>
