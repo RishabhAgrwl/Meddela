@@ -1,7 +1,11 @@
-# Meddela
+# Meddela <img src="Images/Icons/Meddela_Square_Icon__512.png" height="50">
+
 An android application for students to get college notices & updates using Google Firebase.
 
 It will facilitate the students as well as the faculties of our institute to be able to get prompt updates and notifications regarding new notices and time tables /Schedule. The application will authenticate the users and then provide that user's corresponding information. The objective of our project is to facilitate the faculties and the students of our institute by providing instant updates through Real-Time Database.
+
+---
+<img src="Images/App_UI_Design_Full.png">
 
 ---
 **Functionality**
@@ -22,10 +26,6 @@ Users can also upload notes by selecting the class and sections for whom the not
 **Tech**
 
 The Time Tables are created as a Real-time database using firebase database. All users' information and notes are stored in Firebase Storage. Firebase Auth is used for providing logging in functionality. Firebase Cloud Messaging for snding notifications to users regarding any updates.
-
----
-
-<img src="Images/App_UI_Design_Full.png">
 
 ---
 **App Requirements**
