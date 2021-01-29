@@ -21,7 +21,11 @@ Users can also upload notes by selecting the class and sections for whom the not
 ---
 **Tech**
 
-JDK The Time Tables are created as a Real-time database using firebase database. All users' information and notes are stored in Firebase Storage. Firebase Auth is used for providing logging in functionality. Firebase Cloud Messaging for snding notifications to users regarding any updates.
+The Time Tables are created as a Real-time database using firebase database. All users' information and notes are stored in Firebase Storage. Firebase Auth is used for providing logging in functionality. Firebase Cloud Messaging for snding notifications to users regarding any updates.
+
+---
+
+<img src="Images/App_UI_Design_Full.png">
 
 ---
 **App Requirements**
